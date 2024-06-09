@@ -41,6 +41,11 @@ a {
 
 .footer-text {
     margin-right: 120px;
+    /*  */
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+   
 }
 
 .footer-social-text {
@@ -55,6 +60,9 @@ a {
 .dark-box-footer-all {
     display: flex;
     align-items: baseline;
+    /*  */
+    flex-wrap: wrap;
+    align-items: center;
 }
 
 
@@ -444,6 +452,9 @@ footer .social-media-list-link:focus {
 .subscribe-form {
     display: flex;
     gap: 24px;
+    /*  */
+    flex-wrap: wrap;
+    align-items: center;
 }
 
 .subscripe-input{
