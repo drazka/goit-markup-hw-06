@@ -189,8 +189,8 @@ footer .logo {
 .navigation-links {
     display: flex;
     /*  */
-    /* align-items: center; */
     justify-content: space-between;
+    width: 290px;
 }
 
 /* lista class */
