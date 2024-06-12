@@ -17,14 +17,14 @@
         <div class="navigation-line container">
             <nav class="navigation-links">   
                 <a class="logo" href="./index.html">Web <span class="logo-studio">Studio</span></a>
-                <ul class="internal-link-list visually-hidden"> 
+                <ul class="internal-link-list"> 
                     <li><a class="internal-link link-active" href="./index.html">Studio</a></li>
                     <li><a class="internal-link" href="">Portfolio</a></li>
                     <li><a class="internal-link" href="">Contacts</a></li>
                 </ul>
-                <svg width="24" height="24"><use href="./images/icons.svg#icon-menu"></use></svg></div>
+                <svg id="hamburger" class="hamburger" width="24" height="24"><use href="./images/icons.svg#icon-menu"></use></svg></div>
             </nav>
-            <address class="contact visually-hidden">
+            <address class="contact">
                 <ul class="contact-link-list">
                     <li><a class="contact-link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
                     <li><a class="contact-link" href="tel:+110001111111">+11 (000) 111-11-11</a></li>
@@ -37,7 +37,7 @@
         <section  class="dark-box">
             <div class="container dark-box-container">
                 <h1 class="title-text">Effective Solutions for Your Business</h1>
-                <button class="title-button" type="button">Order Service</button>
+                <button id="order" class="title-button" type="button">Order Service</button>
             </div>
         </section>
         <!-- SECTION 2 -->
@@ -229,10 +229,9 @@
     </div>
     </footer>
     
-    <!-- <div class="backdrop is-open">
-         <div class="modal"></div>
-            <button type="button" class="modal-close-button"> -->
-    <div> <div> <button>
+    <div class="backdrop" id="backdrop">
+         <div class="modal">
+            <button type="button" class="modal-close-button" id="modal-close-button">
                 <svg class="modal-close-button-icon" width="8" height="8"><use href="./images/icons.svg#icon-close"></use></svg>
             </button>
             <p class="modal-text">Leave your contacts and we will call you back</p>
@@ -274,12 +273,44 @@
             </form>
         </div>
     </div>
-    <!-- <div class="menu is-open">
-        <div class="modal">
-            <button type="button" class="modal-close-button"> 
+    <div id="mobile-nav" class="mobile-menu">
+        <div>
+            <!-- <button type="button" id="close-btn" class="modal-close-button"> 
                 <svg class="modal-close-button-icon" width="8" height="8"><use href="./images/icons.svg#icon-close"></use></svg>
-            </button>
+            </button> -->
         </div>
-    </div> -->
+    </div>
 </body>
 </html>
+
+<script>
+
+    const OPEN_CLASS = "is-open";
+
+    // const mobileNav = document.querySelector("#mobile-nav");
+    const modal = document.querySelector("#backdrop");
+    
+    // const openMobileNav = () => mobileNav.classList.add(OPEN_CLASS);
+    // const closeMobileNav = () => mobileNav.classList.remove(OPEN_CLASS);
+
+    const openModal = () => modal.classList.add(OPEN_CLASS);
+    const closeModal = () => modal.classList.remove(OPEN_CLASS);
+
+    // document.querySelector("#hamburger").addEventListener("click", openMobileNav);
+    // document.querySelector("#close-btn").addEventListener("click", closeMobileNav);
+
+    document.querySelector("#order").addEventListener("click", openModal);
+    document.querySelector("#modal-close-button").addEventListener("click", closeModal);
+
+    // document.querySelectorAll(".mobile-nav-list .nav-link").forEach(link => {
+    //     link.addEventListener("click", closeMobileNav);
+    // });
+
+    // Event delegation
+    // document.querySelector(".mobile-nav-list").addEventListener("click", (event) => {
+    //     if (event.target.classList.contains("nav-link")) {
+    //         closeMobileNav();
+    //     }
+    // });
+
+</script>
