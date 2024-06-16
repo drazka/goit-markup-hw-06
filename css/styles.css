@@ -43,9 +43,9 @@ a {
     /*  */
     /* margin-right: 120px; */
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
+    /* justify-content: center; */
 }
 
 .footer-social-text {
@@ -62,9 +62,9 @@ a {
     padding-top: 72px;
     padding-bottom: 72px;
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
+    /* justify-content: center; */
 }
 
 .dark-box-footer-all {
