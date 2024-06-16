@@ -74,6 +74,7 @@ a {
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
+    gap: 24px;
 }
 
 .description{
@@ -195,11 +196,7 @@ footer .logo {
     width: 290px;
 }
 
-/* lista class */
-.internal-link-list {
-    display: flex;
-    gap: 40px;
-}
+
 
 /* punkt w li */
 .internal-link{
@@ -237,11 +234,7 @@ footer .logo {
     color: #404bbf;
 }
 
-/* address class - poziom nav */
-.contact {
-    font-style: normal;
-    display: flex;
-}
+
 
 /* li address */
 .contact-link-list {
@@ -745,9 +738,7 @@ footer .social-media-list-link:focus {
     height: 100%;
 }
 
-.hamburger {
-    display: none;
-}
+
 
 /*  */
 .mobile-link-list {
@@ -802,19 +793,53 @@ footer .social-media-list-link:focus {
     color: #404bbf;
 }
 
+
+.internal-link-list,
+.contact {
+    display: none;
+}
+
+.hamburger {
+    display: block;
+}
+
+
 @media (min-resolution: 192dpi) {
     .dak-box {
       background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(..//images/office2x.jpg);
     }
   }
 
-  @media (width < 600px) {
-    .internal-link-list,
+
+@media (width >= 768px) {
+
+    /* lista class */
+    .internal-link-list {
+        display: flex;
+        gap: 40px;
+    }
+
+    /* address class - poziom nav */
     .contact {
-        display: none;
+        font-style: normal;
+        display: flex;
     }
 
     .hamburger {
-        display: block;
+        display: none;
     }
+
+    .subscribe-container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .footer-text {
+        align-items: flex-start;
+    }
+
+    footer .logo {
+        align-self: flex-start;
+    }
+
 }
