@@ -842,4 +842,14 @@ footer .social-media-list-link:focus {
         align-self: flex-start;
     }
 
+    .list-of-description {
+        column-gap: 24px;
+        row-gap: 72px;
+        justify-content: center;
+    }
+    
+    .list-of-description-point {
+        width: calc((100% - 3 * 24px) / 2);
+    }
+
 }
