@@ -173,11 +173,11 @@ footer .logo {
 /* header class */
 .navigation-line-header {
     border-bottom: 1px solid #e7e9fc;
-    min-height: 72px;
     display: flex;
     align-items: center;
     box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
     /*  */
+    /* min-height: 72px; */
     max-height: 56px;   
 }
 
@@ -876,5 +876,27 @@ footer .social-media-list-link:focus {
     .internal-link-list {
         width: 261px;
         margin: 0 auto;
+    }
+
+    .navigation-line-header {
+        min-height: 72px;
+    }
+}
+
+@media (width >= 1080px) {
+    .container {
+        margin: 0 auto;
+        padding: 0 15px;
+    }
+
+    .navigation-line {
+        justify-content: space-evenly;
+        width: inherit;
+    }
+
+    .contact-link-list {
+        flex-direction: row;
+        gap: 40px;
+        width: 744;
     }
 }
