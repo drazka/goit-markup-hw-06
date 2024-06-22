@@ -730,8 +730,6 @@ footer .social-media-list-link:focus {
     height: 100%;
 }
 
-
-
 /*  */
 .mobile-link-list {
     padding: 72px 0 168px 0;
@@ -805,13 +803,11 @@ footer .social-media-list-link:focus {
 
 @media (width >= 768px) {
 
-    /* lista class */
     .internal-link-list {
         display: flex;
         gap: 40px;
     }
 
-    /* address class - poziom nav */
     .contact {
         font-style: normal;
         display: flex;
@@ -874,12 +870,12 @@ footer .social-media-list-link:focus {
         min-height: 72px;
     }
 
-    .description-header {
+    .list-of-description-point .description-header {
         text-align: left;
     }
 }
 
-@media (width >= 1080px) {
+@media (width >= 1158px) {
     .container {
         margin: 0 auto;
         padding: 0 15px;
@@ -916,5 +912,18 @@ footer .social-media-list-link:focus {
     .description-header {
         font-weight: 500;
         font-size: 20px;
+    }
+
+    .footer-text {
+        margin-right: 120px;
+    }
+
+    .footer-socials {
+        margin-right: 80px;
+    }
+
+    .dark-box-footer-all {
+        flex-wrap: nowrap;
+        gap: 0px;
     }
 }
