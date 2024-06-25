@@ -338,7 +338,7 @@ footer .logo {
 
 .title-text {
     font-family: "Roboto", sans-serif;
-    font-size: 56px;
+    font-size: 36px;
     font-weight: 700;
     letter-spacing: 0.02em;
     text-align: center;
@@ -809,8 +809,13 @@ footer .social-media-list-link:focus {
 
 @media (width >= 768px) {
 
+    .porfolio-list-point {
+        width: 356px;
+    }
+
     .title-text {
         max-width: 496px;
+        font-size: 56px;
     }
 
     
@@ -888,10 +893,15 @@ footer .social-media-list-link:focus {
 }
 
 @media (width >= 1158px) {
+    
+    .porfolio-list-point {
+        width: 360px;
+    }
+
     .container {
         margin: 0 auto;
         padding: 0 15px;
-        width: 1300px;
+        width: 1158px;
     }
 
     .contact-link-list {
